@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- HEADER -->
     <header class="header">
@@ -13,14 +21,14 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a href="#about" class="link">About</a></li>
+          <li><a href="#services" class="link">Services and prices</a></li>
+          <li><a href="#barbers" class="link">Barbers</a></li>
+          <li><a href="#contacts" class="link">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
+      <button type="button" class="btn primary">online-booking</button>
     </header>
 
     <!-- MAIN -->
@@ -33,6 +41,7 @@
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="link"
               >Instagram</a
             >
           </li>
@@ -41,12 +50,13 @@
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
+              class="link"
               >Youtube</a
             >
           </li>
         </ul>
 
-        <p class="subtitle">A hair salon for men in Kyiv</p>
+        <p class="pre-title">A hair salon for men in Kyiv</p>
         <h1>BarberShop</h1>
         <p>
           We are experts in trendy men’s haircuts. We work quickly, carefully
@@ -54,13 +64,13 @@
         </p>
 
         <ul>
-          <li><button type="button">Back</button></li>
-          <li><button type="button">Forward</button></li>
+          <li><button type="button" class="btn-slider">Back</button></li>
+          <li><button type="button" class="btn-slider">Forward</button></li>
         </ul>
       </section>
 
       <!-- ABOUT -->
-      <section class="section">
+      <section class="section" id="about">
         <ul>
           <li>
             <img
@@ -79,8 +89,9 @@
             />
           </li>
         </ul>
+
         <div>
-          <p class="subtitle">About</p>
+          <p class="pre-title">About</p>
           <h2 class="section-title">Best Barbershop in your city</h2>
           <p>
             If you want to add more confidence to your image, you should
@@ -93,14 +104,14 @@
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <button type="button">ONLINE-BOOKING</button>
+          <button type="button" class="btn secondary">online-booking</button>
         </div>
       </section>
 
       <!-- SERVICES AND PRICES -->
-      <section class="section">
-        <p class="subtitle">spend your time with the best masters</p>
-        <h2>Services and prices</h2>
+      <section class="section" id="services">
+        <p class="pre-title">spend your time with the best masters</p>
+        <h2 class="section-title">Services and prices</h2>
 
         <ul class="list">
           <li class="item">
@@ -122,6 +133,8 @@
             </ul>
           </li>
         </ul>
+
+        <button type="button" class="btn primary">online-booking</button>
       </section>
 
       <!-- FEATURES -->
@@ -145,8 +158,8 @@
           </li>
         </ul>
 
-        <p class="subtitle">old traditional school</p>
-        <h2>Why people come to us?</h2>
+        <p class="pre-title">old traditional school</p>
+        <h2 class="section-title">Why people come to us?</h2>
         <p>
           Only good things are said about us. But it's better to see and feel 1
           time than read 10 times.
@@ -154,9 +167,9 @@
       </section>
 
       <!-- OUR BARBERS -->
-      <section class="section">
-        <p class="subtitle">for true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
+      <section class="section" id="barbers">
+        <p class="pre-title">for true enjoyers of the atmosphere</p>
+        <h2 class="section-title">Our barbers</h2>
         <ul>
           <li>
             <img
@@ -173,6 +186,7 @@
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Instagram</a
                 >
               </li>
@@ -181,6 +195,7 @@
                   href="https://www.pinterest.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Pinterest</a
                 >
               </li>
@@ -189,6 +204,7 @@
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Facebook</a
                 >
               </li>
@@ -197,6 +213,7 @@
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >LinkedIn</a
                 >
               </li>
@@ -217,6 +234,7 @@
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Instagram</a
                 >
               </li>
@@ -225,6 +243,7 @@
                   href="https://www.pinterest.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Pinterest</a
                 >
               </li>
@@ -233,6 +252,7 @@
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Facebook</a
                 >
               </li>
@@ -241,6 +261,7 @@
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >LinkedIn</a
                 >
               </li>
@@ -261,6 +282,7 @@
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Instagram</a
                 >
               </li>
@@ -269,6 +291,7 @@
                   href="https://www.pinterest.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Pinterest</a
                 >
               </li>
@@ -277,6 +300,7 @@
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >Facebook</a
                 >
               </li>
@@ -285,6 +309,7 @@
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
+                  class="link"
                   >LinkedIn</a
                 >
               </li>
@@ -295,8 +320,8 @@
 
       <!-- GALLERY -->
       <section class="section">
-        <p class="subtitle">in Latin, "barba" means "beard"</p>
-        <h2 hidden>Gallery</h2>
+        <p class="pre-title">in Latin, "barba" means "beard"</p>
+        <h2 class="visually-hidden">Gallery</h2>
         <ul>
           <li>
             <img
@@ -335,27 +360,29 @@
 
       <!-- ONLINE-BOOKING -->
       <section class="section">
-        <h2>Online-booking</h2>
+        <h2 class="section-title">Online-booking</h2>
       </section>
 
       <!-- CONTACTS -->
-      <section class="section">
-        <h2>Contacts</h2>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts</h2>
         <address>
           <ul>
             <li>
-              <a href="https://maps.app.goo.gl/zaZMUa1HUWE6Ueb98"
+              <a href="https://maps.app.goo.gl/zaZMUa1HUWE6Ueb98" class="link"
                 >st. Vasilkovaya, 7A Kiev, 08132</a
               >
             </li>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li>
+              <a href="tel:+380441111111" class="link">+38 044 111 11 11 </a>
+            </li>
             <li>
               <a href="mailto:barbershop@email.com">barbershop@email.com</a>
             </li>
           </ul>
         </address>
 
-        <p class="subtitle">working hours</p>
+        <p class="pre-title">working hours</p>
         <p>Every day from 9:00 to 22:00</p>
       </section>
     </main>
@@ -369,6 +396,7 @@
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer nofollow"
+            class="link"
             >Instagram</a
           >
         </li>
@@ -377,6 +405,7 @@
             href="https://www.youtube.com/"
             target="_blank"
             rel="noopener noreferrer nofollow"
+            class="link"
             >Youtube</a
           >
         </li>
