@@ -25,7 +25,7 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container header-container">
-        <!-- main mavigation -->
+        <!-- main navigation -->
         <nav class="header-nav">
           <!-- logo -->
           <a href="./index.html" aria-label="logo" class="header-logo">
@@ -51,21 +51,18 @@
             </li>
           </ul>
         </nav>
-        <div class="header-right-links">
-          <a href="tel:+380441111111" class="link header-phone"
-            >+38 044 111 11 11</a
-          >
-          <button type="button" class="btn btn-mode-dark">
-            online-booking
-          </button>
-        </div>
+
+        <a href="tel:+380441111111" class="link header-phone"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="btn btn-mode-dark">online-booking</button>
       </div>
     </header>
 
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <section>
         <div class="container hero-container">
           <ul class="hero-socials-list">
             <li>
@@ -88,375 +85,431 @@
             </li>
           </ul>
 
-          <div class="hero-content">
-            <p class="pre-title hero-pretitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p>
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style.
-            </p>
-          </div>
+          <div class="hero-overlay">
+            <div class="hero-content">
+              <p class="pre-title hero-pretitle">
+                A hair salon for men in Kyiv
+              </p>
+              <h1 class="hero-title">BarberShop</h1>
+              <p class="hero-text">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style.
+              </p>
+            </div>
 
-          <ul class="hero-slider">
-            <li>
-              <button type="button" class="btn-slider btn-slider-disabled">
-                Back
-              </button>
-            </li>
-            <li><button type="button" class="btn-slider">Forward</button></li>
-          </ul>
+            <ul class="hero-slider">
+              <li>
+                <button type="button" class="btn-slider btn-slider-disabled">
+                  Back
+                </button>
+              </li>
+              <li><button type="button" class="btn-slider">Forward</button></li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- ABOUT -->
       <section class="section" id="about">
-        <ul>
-          <li>
-            <img
-              src="./images/about/about-1.jpg"
-              alt="Beard shaving"
-              width="270"
-              height="445"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/about/about-2.jpg"
-              alt="Straight razor shave"
-              width="270"
-              height="445"
-            />
-          </li>
-        </ul>
+        <div class="container about-container">
+          <ul class="about-list">
+            <li>
+              <img
+                src="./images/about/about-1.jpg"
+                alt="Beard shaving"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/about/about-2.jpg"
+                alt="Straight razor shave"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
 
-        <div>
-          <p class="pre-title">About</p>
-          <h2 class="section-title">Best Barbershop in your city</h2>
-          <p class="about-top-text">
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </p>
-          <p class="about-bottom-text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button type="button" class="btn btn-mode-light">
-            online-booking
-          </button>
+          <div class="about-content">
+            <p class="pre-title about-pretitle">About</p>
+            <h2 class="section-title about-title">
+              Best Barbershop in your city
+            </h2>
+            <p class="about-top-text">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-bottom-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="btn btn-mode-light">
+              online-booking
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- SERVICES AND PRICES -->
       <section class="section services" id="services">
-        <p class="pre-title">spend your time with the best masters</p>
-        <h2 class="section-title">Services and prices</h2>
+        <div class="container services-container">
+          <p class="pre-title">spend your time with the best masters</p>
+          <h2 class="section-title">Services and prices</h2>
 
-        <ul class="list">
-          <li class="item">
-            <ul class="inner-list">
-              <li class="inner-item">Men’s haircut from 300 uah.</li>
-              <li class="inner-item">Beard trim from 300 uah.</li>
-              <li class="inner-item">Mustache trim from 300 uah.</li>
-              <li class="inner-item">Straight razor shave from 300 uah.</li>
-            </ul>
-          </li>
-          <li class="item">
-            <ul class="inner-list">
-              <li class="inner-item">Trainee’s haircut from 300 uah.</li>
-              <li class="inner-item">Haircut under the nozzle from 300 uah.</li>
-              <li class="inner-item">
-                Children’s haircut (0-12 y.o.) from 300 uah.
-              </li>
-              <li class="inner-item">Camouflage of gray hair from 300 uah.</li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="list services-list">
+            <li class="services-item">
+              <ul class="inner-list">
+                <li class="inner-item">
+                  <p>Men’s haircut</p>
+                  <p>from 300 uah.</p>
+                </li>
+                <li class="inner-item">
+                  <p>Beard trim</p>
+                  <p>from 300 uah.</p>
+                </li>
+                <li class="inner-item">
+                  <p>Mustache trim</p>
+                  <p>from 300 uah.</p>
+                </li>
+                <li class="inner-item">
+                  <p>Straight razor shave</p>
+                  <p>from 300 uah.</p>
+                </li>
+              </ul>
+            </li>
+            <li class="services-item">
+              <ul class="inner-list">
+                <li class="inner-item">
+                  <p>Trainee’s haircut</p>
+                  <p>from 300 uah.</p>
+                </li>
+                <li class="inner-item">
+                  <p>Haircut under the nozzle</p>
+                  <p>from 300 uah.</p>
+                </li>
+                <li class="inner-item">
+                  <p>Children’s haircut (0-12 y.o.)</p>
+                  <p>from 300 uah.</p>
+                </li>
+                <li class="inner-item">
+                  <p>Camouflage of gray hair</p>
+                  <p>from 300 uah.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-        <button type="button" class="btn btn-mode-dark">online-booking</button>
+          <button type="button" class="btn btn-mode-dark services-btn">
+            online-booking
+          </button>
+        </div>
       </section>
 
       <!-- FEATURES -->
-      <section class="section features">
-        <ul class="features-list">
-          <li class="features-item">
-            <p class="features-top-item">600</p>
-            <p class="features-bottom-item">Satisfied customers per day</p>
-          </li>
-          <li class="features-item">
-            <p class="features-top-item">50</p>
-            <p class="features-bottom-item">Awards for excellent service</p>
-          </li>
-          <li class="features-item">
-            <p class="features-top-item">20</p>
-            <p class="features-bottom-item">Kyiv’s best barbers</p>
-          </li>
-          <li class="features-item">
-            <p class="features-top-item">100</p>
-            <p class="features-bottom-item">Gifts for regular customers</p>
-          </li>
-        </ul>
+      <section>
+        <div class="container features-container">
+          <ul class="features-list">
+            <li class="features-item">
+              <p class="features-top-item">600</p>
+              <p class="features-bottom-item">Satisfied customers per day</p>
+            </li>
+            <li class="features-item">
+              <p class="features-top-item">50</p>
+              <p class="features-bottom-item">Awards for excellent service</p>
+            </li>
+            <li class="features-item">
+              <p class="features-top-item">20</p>
+              <p class="features-bottom-item">Kyiv’s best barbers</p>
+            </li>
+            <li class="features-item">
+              <p class="features-top-item">100</p>
+              <p class="features-bottom-item">Gifts for regular customers</p>
+            </li>
+          </ul>
 
-        <p class="pre-title">old traditional school</p>
-        <h2 class="section-title">Why people come to us?</h2>
-        <p class="features-text">
-          Only good things are said about us. But it's better to see and feel 1
-          time than read 10 times.
-        </p>
+          <div class="features-content">
+            <p class="pre-title features-pretitle">old traditional school</p>
+            <h2 class="section-title features-title">Why people come to us?</h2>
+            <p class="features-text">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- OUR BARBERS -->
       <section class="section" id="barbers">
-        <p class="pre-title">for true enjoyers of the atmosphere</p>
-        <h2 class="section-title">Our barbers</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/our-barbers/our-barbers-1.jpg"
-              alt="John Smith"
-              width="370"
-              height="346"
-            />
-            <h3 class="barbers-subtitle">John Smith</h3>
-            <p class="barbers-text">Extreme Barber</p>
-            <ul>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Pinterest</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/our-barbers/our-barbers-2.jpg"
-              alt="Michele Doe"
-              width="370"
-              height="346"
-            />
-            <h3 class="barbers-subtitle">Michele Doe</h3>
-            <p class="barbers-text">Extreme Barber</p>
-            <ul>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Pinterest</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/our-barbers/our-barbers-3.jpg"
-              alt="Alan Black"
-              width="370"
-              height="346"
-            />
-            <h3 class="barbers-subtitle">Alan Black</h3>
-            <p class="barbers-text">Extreme Barber</p>
-            <ul>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Pinterest</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="container barbers-container">
+          <p class="pre-title barbers-pretitle">
+            for true enjoyers of the atmosphere
+          </p>
+          <h2 class="section-title barbers-title">Our barbers</h2>
+          <ul class="barbers-list">
+            <li class="barbers-item">
+              <img
+                class="barbers-img"
+                src="./images/our-barbers/our-barbers-1.jpg"
+                alt="John Smith"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-subtitle">John Smith</h3>
+              <p class="barbers-text">Extreme Barber</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.pinterest.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Pinterest</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="barbers-item">
+              <img
+                class="barbers-img"
+                src="./images/our-barbers/our-barbers-2.jpg"
+                alt="Michele Doe"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-subtitle">Michele Doe</h3>
+              <p class="barbers-text">Extreme Barber</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.pinterest.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Pinterest</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="barbers-item">
+              <img
+                class="barbers-img"
+                src="./images/our-barbers/our-barbers-3.jpg"
+                alt="Alan Black"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-subtitle">Alan Black</h3>
+              <p class="barbers-text">Extreme Barber</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.pinterest.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Pinterest</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- GALLERY -->
       <section class="section">
-        <p class="pre-title">in Latin, "barba" means "beard"</p>
-        <h2 class="visually-hidden">Gallery</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/gallery/gallery-1.jpg"
-              alt="Men’s haircut"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/gallery/gallery-2.jpg"
-              alt="Beard shaving"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/gallery/gallery-3.jpg"
-              alt="Haircut under the nozzle"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/gallery/gallery-4.jpg"
-              alt="Straight razor shave"
-              width="270"
-              height="360"
-            />
-          </li>
-        </ul>
-      </section>
+        <div class="container gallery-container">
+          <p class="pre-title gallery-pretitle">
+            in Latin, "barba" means "beard"
+          </p>
+          <h2 class="visually-hidden">Gallery</h2>
 
-      <!-- ONLINE-BOOKING -->
-      <section class="section">
-        <h2 class="section-title">Online-booking</h2>
-      </section>
-
-      <!-- CONTACTS -->
-      <section class="section" id="contacts">
-        <h2 class="section-title">Contacts</h2>
-        <address class="contacts-adress">
-          <ul>
-            <li>
-              <a
-                href="https://maps.app.goo.gl/zaZMUa1HUWE6Ueb98"
-                class="link contacts-map"
-                >st. Vasilkovaya, 7A Kiev, 08132</a
-              >
+          <ul class="gallery-list">
+            <li class="galery-item">
+              <img
+                src="./images/gallery/gallery-1.jpg"
+                alt="Men’s haircut"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="galery-item">
+              <img
+                src="./images/gallery/gallery-2.jpg"
+                alt="Beard shaving"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="galery-item">
+              <img
+                src="./images/gallery/gallery-3.jpg"
+                alt="Haircut under the nozzle"
+                width="270"
+                height="360"
+              />
             </li>
             <li>
-              <a href="tel:+380441111111" class="link contacts-phone"
-                >+38 044 111 11 11
-              </a>
-            </li>
-            <li>
-              <a href="mailto:barbershop@email.com" class="link contacts-mail"
-                >barbershop@email.com</a
-              >
+              <img
+                src="./images/gallery/gallery-4.jpg"
+                alt="Straight razor shave"
+                width="270"
+                height="360"
+              />
             </li>
           </ul>
-        </address>
-
-        <p class="pre-title contacts-pre-title">working hours</p>
-        <p class="contacts-working-hours-text">Every day from 9:00 to 22:00</p>
+        </div>
       </section>
+
+      <div class="container form-contacts-wrap">
+        <!-- ONLINE-BOOKING -->
+        <section class="section form-container">
+          <h2 class="section-title">Online-booking</h2>
+        </section>
+
+        <!-- CONTACTS -->
+        <section class="section contacts-container" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <address class="contacts-adress">
+            <ul>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/zaZMUa1HUWE6Ueb98"
+                  class="link contacts-map"
+                  >st. Vasilkovaya, 7A Kiev, 08132</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380441111111" class="link contacts-phone"
+                  >+38 044 111 11 11
+                </a>
+              </li>
+              <li>
+                <a href="mailto:barbershop@email.com" class="link contacts-mail"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <p class="pre-title contacts-pre-title">working hours</p>
+          <p class="contacts-working-hours-text">
+            Every day from 9:00 to 22:00
+          </p>
+        </section>
+      </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p class="copyright-text">&#169; Copyright 2020</p>
-      <ul>
-        <li>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="link socials-link"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            class="link socials-link"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+      <div class="container footer-container">
+        <p class="copyright-text">&#169; Copyright 2020</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="link socials-link"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="link socials-link"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
