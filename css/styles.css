@@ -298,6 +298,7 @@ img {
 
 .about-pretitle {
   margin-bottom: 20px;
+  color: var(--secondary-text-color);
 }
 
 .about-title {
@@ -428,6 +429,7 @@ img {
 
 .features-pretitle {
   margin-bottom: 20px;
+  color: var(--secondary-text-color);
 }
 
 .features-title {
@@ -442,6 +444,10 @@ img {
 
 /* * ---------------OUR BARBERS---------------  */
 
+.barbers {
+  background-color: var(--gray-bg-color);
+}
+
 .barbers-container {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -449,6 +455,7 @@ img {
 
 .barbers-pretitle {
   margin-bottom: 20px;
+  color: var(--secondary-text-color);
 }
 
 .barbers-title {
@@ -463,8 +470,9 @@ img {
   width: calc((100% - 60px) / 3);
 }
 
-.barbers-img {
-  margin-bottom: 30px;
+.barber-group {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .barbers-subtitle {
@@ -485,6 +493,33 @@ img {
   color: var(--accent-text-color);
 }
 
+.barbers-socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.barbers-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-bg-color);
+  border-radius: 50%;
+}
+
+.socials-icon {
+  fill: var(--secondary-text-color);
+}
+
+.barbers-socials-link:hover .socials-icon,
+.barbers-socials-link:focus .socials-icon {
+  fill: var(--accent-text-color);
+}
+
 /* * ---------------GALLERY---------------  */
 .gallery-container {
   padding-top: 130px;
@@ -493,6 +528,7 @@ img {
 
 .gallery-pretitle {
   margin-bottom: 44px;
+  color: var(--secondary-text-color);
 }
 
 .gallery-list {
