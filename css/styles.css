@@ -285,6 +285,8 @@ img {
   gap: 64px;
   padding-top: 130px;
   padding-bottom: 130px;
+  /* padding-left: 55px;
+  padding-right: 55px; */
 }
 
 .about-list {
@@ -321,12 +323,23 @@ img {
 /* * ---------------SERVICES AND PRICES---------------  */
 
 .services {
+  margin: 0 auto;
+  max-width: 1200px;
+
   background-color: var(--dark-bg-color);
+  background-image: url(/images/services/services-bg.png),
+    linear-gradient(var(--dark-bg-color), var(--dark-bg-color));
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .services-container {
   padding-top: 130px;
   padding-bottom: 130px;
+  /* padding-left: 55px;
+  padding-right: 55px; */
 }
 
 .services .pre-title {
@@ -346,7 +359,13 @@ img {
 
 .services-item {
   width: calc(100% / 2);
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
+
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-item:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .inner-list {
@@ -588,13 +607,26 @@ img {
   margin-bottom: 20px;
 }
 
-.contacts-map {
+.contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contacts-link.map {
   font-weight: 700;
 }
 
-.contacts-mail {
+.contacts-link.mail {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+.contacts-link.phone {
+}
+
+.contacts-icon {
+  stroke: currentColor;
 }
 
 .contacts-pretitle {
