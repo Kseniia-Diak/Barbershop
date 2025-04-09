@@ -68,7 +68,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* * ---------------MAIN FONT STYLES---------------  */
@@ -324,9 +324,8 @@ img {
 
 .services {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1280px;
 
-  background-color: var(--dark-bg-color);
   background-image: url(/images/services/services-bg.png),
     linear-gradient(var(--dark-bg-color), var(--dark-bg-color));
 
@@ -338,13 +337,10 @@ img {
 .services-container {
   padding-top: 130px;
   padding-bottom: 130px;
-  /* padding-left: 55px;
-  padding-right: 55px; */
 }
 
 .services .pre-title {
   margin-bottom: 20px;
-  color: rgba(157, 164, 189, 0.6);
 }
 
 .services .section-title {
@@ -375,11 +371,24 @@ img {
 .services .inner-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
 
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--secondary-light-text-color);
+}
+
+.inner-item::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.inner-item-text:last-child {
+  order: 1;
 }
 
 .services .inner-item:not(:last-child) {
@@ -392,51 +401,77 @@ img {
 }
 
 /* * ---------------FEATURES---------------  */
-.features-container {
+
+.benefits {
   padding-bottom: 130px;
   padding-top: 130px;
+}
+.features-container {
   display: flex;
+  padding-left: 115px;
+  gap: 130px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-shrink: 0;
 
   width: 370px;
-  margin-left: 100px;
-  margin-right: 130px;
+  /* margin-left: 100px;
+  margin-right: 130px; */
 }
 
 .features-item {
-  padding: 20px;
+  padding: 20px 24px;
   width: 170px;
+  height: 133px;
+
   background-color: var(--gray-bg-color);
 }
 
 .features-item:nth-child(odd) {
   margin-right: 30px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .features-item:nth-child(even) {
   margin-top: 30px;
 }
 
-/* .features-item:nth-child(n + 2) {
-  margin-top: 30px;
-} */
-
 .features-content {
   max-width: 500px;
 }
 
 .features-top-item {
+  display: block;
   margin-bottom: 6px;
+
   font-weight: 700;
   font-size: 42px;
   letter-spacing: 0.05em;
   text-align: center;
   color: var(--secondary-text-color);
+}
+
+.features-top-item::after {
+  content: "+";
+  margin-left: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+
+  vertical-align: top;
+  display: inline-block;
+
+  /* first option */
+  /* color: var(--accent-text-color); */
+  /* margin-top: 6px; */
+
+  /* second option */
+  color: transparent;
+  text-shadow: 0 6px 0 var(--accent-text-color);
 }
 
 .features-bottom-item {
@@ -564,6 +599,17 @@ img {
 
 .form-contacts-wrap {
   display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: #191c26;
+  background-image: url(/images/contacts/contacts-bg.png),
+    linear-gradient(#191c26, #191c26);
+  background-repeat: no-repeat;
+  background-size: calc(50% - 15px);
+  background-position: right;
 }
 
 .form-title {
@@ -584,13 +630,6 @@ img {
   padding-bottom: 130px;
   padding-left: 100px;
   width: 50%;
-
-  background-color: var(--dark-bg-color);
-  background-image: url(/images/contacts/contacts-bg.png),
-    linear-gradient(#191c26, #191c26);
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
 }
 
 .contacts-title {
@@ -608,6 +647,7 @@ img {
 
 .contacts-list {
   margin-bottom: 70px;
+  max-width: 270px;
 }
 
 .contacts-item:not(:last-child) {
@@ -642,9 +682,9 @@ img {
   color: var(--primary-light-text-color);
 }
 
-.
-
-rgba(157, 164, 189, 0.4);
+.contacts-pretitle::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
 
 .contacts-working-hours-text {
   font-size: 18px;
@@ -671,5 +711,13 @@ rgba(157, 164, 189, 0.4);
 
 .socials-list {
   display: flex;
+  align-items: center;
   gap: 40px;
+}
+
+.socials-list::before {
+  content: "";
+  width: 61px;
+  height: 1px;
+  background-color: currentColor;
 }
