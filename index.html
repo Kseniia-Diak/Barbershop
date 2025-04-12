@@ -52,10 +52,14 @@
           </ul>
         </nav>
 
-        <a href="tel:+380441111111" class="link header-phone"
-          >+38 044 111 11 11</a
-        >
-        <button type="button" class="btn btn-mode-dark">online-booking</button>
+        <div class="header-right-block">
+          <a href="tel:+380441111111" class="link header-phone"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="btn btn-mode-dark">
+            online-booking
+          </button>
+        </div>
       </div>
     </header>
 
@@ -97,13 +101,23 @@
               </p>
             </div>
 
-            <ul class="hero-slider">
+            <!-- slider pagination -->
+            <ul class="slider-pagination">
+              <li class="pagination-item active"></li>
+              <li class="pagination-item"></li>
+              <li class="pagination-item"></li>
+            </ul>
+
+            <!-- slider buttons -->
+            <ul class="hero-slider-group">
               <li>
                 <button type="button" class="btn-slider btn-slider-disabled">
                   Back
                 </button>
               </li>
-              <li><button type="button" class="btn-slider">Forward</button></li>
+              <li>
+                <button type="button" class="btn-slider">Forward</button>
+              </li>
             </ul>
           </div>
         </div>
