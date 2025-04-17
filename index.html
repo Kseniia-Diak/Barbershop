@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -66,28 +67,30 @@
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <section>
+      <section class="hero">
         <div class="container hero-container">
-          <ul class="socials-list">
-            <li class="socials-item hero-socials-list">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="link socials-link"
-                >Instagram</a
-              >
-            </li>
-            <li class="socials-item">
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="link socials-link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="socials-list">
+              <li class="socials-item hero-socials-list">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link socials-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="socials-item">
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link socials-link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <div class="hero-overlay">
             <div class="hero-content">
@@ -145,7 +148,11 @@
             </li>
           </ul>
 
-          <div class="about-content">
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <p class="pre-title about-pretitle">About</p>
             <h2 class="section-title about-title">
               Best Barbershop in your city
@@ -175,7 +182,11 @@
           <p class="pre-title">spend your time with the best masters</p>
           <h2 class="section-title">Services and prices</h2>
 
-          <ul class="list services-list">
+          <ul
+            class="list services-list"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <li class="services-item">
               <ul class="inner-list">
                 <li class="inner-item">
@@ -246,7 +257,11 @@
             </li>
           </ul>
 
-          <div class="features-content">
+          <div
+            class="features-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <p class="pre-title features-pretitle">old traditional school</p>
             <h2 class="section-title features-title">
               Why people come <br />
@@ -603,5 +618,10 @@
         <use href="./images/sprite.svg#arrow-up"></use>
       </svg>
     </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
