@@ -30,7 +30,7 @@
           <!-- logo -->
           <a href="./index.html" aria-label="logo" class="header-logo">
             <img
-              src="./images/header/logo.png"
+              src="./images/header/logo.svg"
               alt="logo"
               width="69"
               height="56"
@@ -56,9 +56,9 @@
           <a href="tel:+380441111111" class="link header-phone"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="btn btn-mode-dark">
-            online-booking
-          </button>
+          <a href="#online-form" class="link btn btn-mode-dark"
+            >online-booking</a
+          >
         </div>
       </div>
     </header>
@@ -161,9 +161,10 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="btn btn-mode-light">
+
+            <a href="#online-form" class="link btn btn-mode-light">
               online-booking
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -217,9 +218,9 @@
             </li>
           </ul>
 
-          <button type="button" class="btn btn-mode-dark services-btn">
+          <a href="#online-form" class="link btn btn-mode-dark services-btn">
             online-booking
-          </button>
+          </a>
         </div>
       </section>
 
@@ -519,7 +520,7 @@
 
       <div class="form-contacts-wrap">
         <!-- ONLINE-BOOKING -->
-        <section class="section form-container">
+        <section class="section form-container" id="online-form">
           <h2 class="section-title form-title">Online-booking</h2>
         </section>
 
@@ -596,5 +597,11 @@
         </ul>
       </div>
     </footer>
+
+    <button class="scroll-to-top" type="button">
+      <svg class="arrow-up" width="20" height="20">
+        <use href="./images/sprite.svg#arrow-up"></use>
+      </svg>
+    </button>
   </body>
 </html>
