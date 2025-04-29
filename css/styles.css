@@ -753,28 +753,103 @@ img {
 
 .form-contacts-wrap {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  /* display: flex;
   max-width: 1280px;
   margin: 0 auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; */
 
-  background-color: #191c26;
+  /* background-color: #191c26;
   background-image: url(/images/contacts/contacts-bg.png),
     linear-gradient(#191c26, #191c26);
   background-repeat: no-repeat;
   background-size: calc(50% - 15px);
-  background-position: right;
-}
-
-.form-title {
-  color: var(--primary-light-text-color);
+  background-position: right; */
 }
 
 .form-container {
   padding-top: 130px;
   padding-bottom: 130px;
+  padding-left: 100px;
+  padding-right: 40px;
   width: 50%;
   background-color: #191c26;
+}
+
+.form-title {
+  margin-bottom: 44px;
+  color: var(--primary-light-text-color);
+}
+
+.form-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-input-wrap {
+  position: relative;
+  margin-bottom: 48px;
+  width: calc(50% - 15px);
+}
+
+.input-message-wrap {
+  width: 100%;
+}
+
+.form-label {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: transform 300ms linear, color 300ms linear;
+}
+
+.form-input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px;
+
+  font-size: 16px;
+  border: none;
+  color: var(--white-bg-color);
+  background-color: #191c26;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.form-input.input-message {
+  height: 70px;
+  resize: none;
+}
+
+.form-input:hover + .form-label {
+  color: var(--accent-text-color);
+}
+
+.form-input:focus {
+  border-color: var(--white-bg-color);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-44px);
+  color: var(--accent-text-color);
+}
+
+.form-input:focus + .message-label,
+.form-input:not(:placeholder-shown) + .message-label {
+  transform: translateY(-76px);
 }
 
 /* * ---------------CONTACTS---------------  */
@@ -783,7 +858,13 @@ img {
   padding-top: 130px;
   padding-bottom: 130px;
   padding-left: 100px;
+  padding-right: 255px;
   width: 50%;
+
+  background-image: url(/images/contacts/contacts-bg.png),
+    linear-gradient(#191c26, #191c26);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts-title {

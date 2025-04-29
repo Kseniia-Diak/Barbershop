@@ -557,6 +557,49 @@
         <!-- ONLINE-BOOKING -->
         <section class="section form-container" id="online-form">
           <h2 class="section-title form-title">Online-booking</h2>
+          <form class="form-field">
+            <div class="form-input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="form-input"
+                placeholder=" "
+                aria-label="Name"
+                required
+              />
+              <label for="user-name" class="form-label">name*</label>
+            </div>
+
+            <div class="form-input-wrap">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="form-input"
+                placeholder=" "
+                aria-label="Phone"
+                required
+              />
+              <label for="user-phone" class="form-label">phone*</label>
+            </div>
+
+            <div class="form-input-wrap input-message-wrap">
+              <textarea
+                name="user-message"
+                id="user-message"
+                class="form-input input-message"
+                rows="4"
+                placeholder=" "
+                aria-label="Message"
+              ></textarea>
+              <label for="user-message" class="form-label message-label"
+                >message</label
+              >
+            </div>
+
+            <button type="submit" class="btn-mode-dark btn">Send</button>
+          </form>
         </section>
 
         <!-- CONTACTS -->
